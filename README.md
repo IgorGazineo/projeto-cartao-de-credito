@@ -39,10 +39,12 @@ Temos uma sugestão de design no Figma. Mas sinta-se livre para utilizar a criat
 
 ## ❓ FAQ
 
-### Posso utilizar  React ou outras bibliotecas?
+### Posso utilizar React ou outras bibliotecas?
 
 Você pode utilizar as ferramentas que desejar para implementar esse projeto. Porém, o objetivo principal aqui é exercitar os fundamentos de HTML, CSS e JavaScript e a resolução oficial será implementa dessa maneira.
 
 ### Posso utilizar frameworks de estilo?
 
 Sim! Apesar do objetivo principal desse projeto ser exercitar suas habilidades com CSS puro, fique à vontade para utilizar as ferramentas que desejar.
+
+<a href="https://codante.io/">codante</a>

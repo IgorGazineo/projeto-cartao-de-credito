@@ -4,14 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cartão de Crédito</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/pedido.css" />
   </head>
   <body>
+    <header><a href="index.html">Voltar</a></header>
     <main class="credit-card-container">
-      <section class="credit-card">
-        <header class="logo"></header>
+      <section class="credit-card front-card">
+        <div class="card-logo">
+          <img src="images/Icon.svg" alt="logo" />
+        </div>
+        <div class="card-number">
+          <p>XXXX-XXXX-XXXX-XXXX</p>
+        </div>
+        <ul>
+          <li class="card-name">
+            <p class="name-title">Cardholder</p>
+            <p>XXXX XXXX</p>
+          </li>
+          <li class="card-expiry-date">
+            <p class="expiry-date-title">Expires</p>
+            <p>XX/XX</p>
+          </li>
+        </ul>
       </section>
-      <section><form action=""></form></section>
+      <section class="credit-card back-card"></section>
+      <section>
+        <form action="">
+          <h1>Digite os dados do seu cartão</h1>
+
+          <section>
+            <ul>
+              <li>
+                <label for="card-number">Número do cartão</label>
+                <input type="number" name="card-number" id="card-number" />
+              </li>
+              <li>
+                <label for="card-name">Nome impresso no cartão</label>
+                <input type="number" name="card-name" id="card-name" />
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <ul>
+              <li>
+                <label for="month-year">Validade</label>
+                <select name="month" id="month-year">
+                  <option value="">mm</option>
+                  <option value="jan">01</option>
+                  <option value="fev">02</option>
+                  <option value="mar">03</option>
+                  <option value="abr">04</option>
+                  <option value="mai">05</option>
+                  <option value="jun">06</option>
+                  <option value="jul">07</option>
+                  <option value="ago">08</option>
+                  <option value="set">09</option>
+                  <option value="out">10</option>
+                  <option value="nov">11</option>
+                  <option value="dec">12</option>
+                </select>
+                <select name="year" id="month-year">
+                  <option value="">yy</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                </select>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <label for="verification-code">Código de verificação</label>
+            <input
+              type="number"
+              name="verification-code"
+              id="verification-code"
+            />
+          </section>
+        </form>
+      </section>
     </main>
   </body>
 </html>
