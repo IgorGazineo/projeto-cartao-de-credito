@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 
 body {
@@ -14,35 +15,60 @@ header {
   padding: 16px 0;
 }
 
+header img {
+  cursor: pointer;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20%;
+  gap: 15%;
   margin: 0 auto;
   width: 893px;
   height: 503px;
 }
 
 .left {
-  width: 430px;
+  /* width: 430px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .left h1 {
-  font-size: 40px;
+  font-size: 48px;
   font-family: "Inter", sans-serif;
-  text-align: center;
 }
 
 .left p {
   font-size: 13px;
+  width: 330px;
+}
+
+.pedido-btn {
+  padding: 0.75rem 1.75rem;
+  border: 1px solid #507ffa;
+  border-radius: 8px;
+  width: 8rem;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  background-color: #1f2937;
+  color: #f3f4f6;
+  transition: transform 0.3s ease-out;
+}
+
+.pedido-btn:hover {
+  transform: scale(1.05);
 }
 
 .right {
   width: 430px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .credit-card {

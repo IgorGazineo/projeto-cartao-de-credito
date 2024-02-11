@@ -55,6 +55,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  cursor: default;
 }
 
 .front-card .card-logo {
@@ -83,6 +84,7 @@ ul {
 
 .back-card {
   display: none;
+  cursor: default;
 }
 
 .right {
@@ -118,6 +120,27 @@ select {
   box-sizing: border-box;
   font-weight: 500;
   font-size: 16px;
+}
+
+.voltar-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid #507ffa;
+  border-radius: 8px;
+  width: 3rem;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  background-color: #1f2937;
+  color: #f3f4f6;
+  transition: transform 0.3s ease-out;
+}
+
+.voltar-btn:hover {
+  transform: scale(1.05);
 }
 
 .right li {
