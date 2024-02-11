@@ -16,26 +16,38 @@
   <body>
     <header><a href="index.html">Voltar</a></header>
     <main class="credit-card-container">
-      <section class="credit-card front-card">
-        <div class="card-logo">
-          <img src="images/Icon.svg" alt="logo" />
-        </div>
-        <div class="card-number">
-          <p>XXXX-XXXX-XXXX-XXXX</p>
-        </div>
-        <ul>
-          <li class="card-name">
-            <p class="name-title">Cardholder</p>
-            <p>XXXX XXXX</p>
-          </li>
-          <li class="card-expiry-date">
-            <p class="expiry-date-title">Expires</p>
-            <p>XX/XX</p>
-          </li>
-        </ul>
+      <!-- ********************  left ******************** -->
+      <section class="left">
+        <section class="btns">
+          <ul>
+            <li><button type="button" class="front btn">Frente</button></li>
+            <li><button type="button" class="back btn">Verso</button></li>
+          </ul>
+        </section>
+
+        <section class="credit-card front-card">
+          <div class="card-logo">
+            <img src="images/Icon.svg" alt="logo" />
+          </div>
+          <div class="card-number">
+            <p>XXXX-XXXX-XXXX-XXXX</p>
+          </div>
+          <ul>
+            <li class="card-name">
+              <p class="name-title">Cardholder</p>
+              <p>XXXX XXXX</p>
+            </li>
+            <li class="card-expiry-date">
+              <p class="expiry-date-title">Expires</p>
+              <p>XX/XX</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="credit-card back-card"></section>
       </section>
-      <section class="credit-card back-card"></section>
-      <section>
+      <!-- ********************  right ******************** -->
+      <section class="right">
         <form action="">
           <h1>Digite os dados do seu cartão</h1>
 
@@ -53,11 +65,11 @@
           </section>
 
           <section>
-            <ul>
+            <label for="month-year">Validade</label>
+            <ul class="expiration-date">
               <li>
-                <label for="month-year">Validade</label>
                 <select name="month" id="month-year">
-                  <option value="">mm</option>
+                  <option value="" style="display: none">mm</option>
                   <option value="jan">01</option>
                   <option value="fev">02</option>
                   <option value="mar">03</option>
@@ -71,8 +83,10 @@
                   <option value="nov">11</option>
                   <option value="dec">12</option>
                 </select>
+              </li>
+              <li>
                 <select name="year" id="month-year">
-                  <option value="">yy</option>
+                  <option value="" style="display: none">yy</option>
                   <option value="25">25</option>
                   <option value="26">26</option>
                   <option value="27">27</option>

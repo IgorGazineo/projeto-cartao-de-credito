@@ -20,6 +20,13 @@ ul {
   list-style: none;
 }
 
+.btns ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px 0;
+}
+
 .credit-card-container {
   background-color: #f3f4f6;
   width: 893px;
@@ -78,6 +85,50 @@ ul {
   display: none;
 }
 
+.right {
+  padding: 54px 0;
+}
+
 form {
   width: 249px;
+}
+
+form h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #101010;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #101010;
+  display: block;
+  margin-bottom: 2px;
+}
+
+input,
+select {
+  background-color: #f9fafb;
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.right li {
+  margin-bottom: 10px;
+}
+
+.expiration-date {
+  display: flex;
+  gap: 5px;
+}
+
+.expiration-date li {
+  width: 100%;
 }
