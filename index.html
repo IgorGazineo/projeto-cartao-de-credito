@@ -3,28 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <a href="pedido.html">Faça seu pedido</a>
-    <section class="credit-card front-card">
-      <div class="card-logo">
-        <img src="images/Icon.svg" alt="logo" />
-      </div>
-      <div class="card-number">
-        <p>XXXX-XXXX-XXXX-XXXX</p>
-      </div>
-      <ul>
-        <li class="card-name">
-          <p class="name-title">Cardholder</p>
-          <p>XXXX XXXX</p>
-        </li>
-        <li class="card-expiry-date">
-          <p class="expiry-date-title">Expires</p>
-          <p>XX/XX</p>
-        </li>
-      </ul>
-    </section>
+    <header>
+      <a href="index.html">
+        <img src="images/Icon.svg" alt="Logo" />
+      </a>
+    </header>
+
+    <main class="hero">
+      <section class="left">
+        <h1>Cartão de Crédito Liberdade.</h1>
+        <p>
+          "Desbloqueie um mundo de possibilidades e liberdade financeira com o
+          Cartão de Crédito Liberdade - sua chave para realizar sonhos, onde
+          quer que você vá. Confie na segurança, benefícios e conveniência que
+          oferecemos, enquanto você vive a vida ao máximo."
+        </p>
+        <a href="pedido.html">Faça seu pedido</a>
+      </section>
+      <section class="right">
+        <section class="credit-card front-card">
+          <div class="card-logo">
+            <img src="images/Icon.svg" alt="logo" />
+          </div>
+          <div class="card-number">
+            <p>XXXX-XXXX-XXXX-XXXX</p>
+          </div>
+          <ul>
+            <li class="card-name">
+              <p class="name-title">Cardholder</p>
+              <p>XXXX XXXX</p>
+            </li>
+            <li class="card-expiry-date">
+              <p class="expiry-date-title">Expires</p>
+              <p>XX/XX</p>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
