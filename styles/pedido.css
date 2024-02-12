@@ -39,6 +39,12 @@ ul {
   box-sizing: border-box;
 }
 
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .credit-card {
   width: 280px;
   height: 176px;
@@ -122,13 +128,12 @@ select {
   font-size: 16px;
 }
 
-.voltar-btn {
-  margin-top: 1rem;
+.voltar-btn,
+.fazer-pedido-btn {
   display: inline-block;
   padding: 0.75rem 1.75rem;
   border: 1px solid #507ffa;
   border-radius: 8px;
-  width: 3rem;
   cursor: pointer;
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -139,6 +144,16 @@ select {
   transition: transform 0.3s ease-out;
 }
 
+.voltar-btn {
+  width: 3rem;
+}
+
+.fazer-pedido-btn {
+  width: 12rem;
+  margin-top: 1rem;
+}
+
+.fazer-pedido-btn:hover,
 .voltar-btn:hover {
   transform: scale(1.05);
 }
