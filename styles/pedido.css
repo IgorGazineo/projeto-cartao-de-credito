@@ -89,8 +89,35 @@ ul {
 }
 
 .back-card {
+  /* display: block; */
   display: none;
+  position: relative;
   cursor: default;
+}
+
+.back-card .line-card {
+  position: absolute;
+  left: 0;
+  top: 39px;
+  background-color: #a9a9a9;
+  height: 41px;
+  width: 100%;
+}
+
+.back-card .verification-code-card {
+  position: absolute;
+  top: 101px;
+  right: 23px;
+  padding: 0.375rem 1rem;
+  border: 1px solid #507ffa;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.back-card .card-logo-back {
+  position: absolute;
+  bottom: 9px;
+  left: 13.65px;
 }
 
 .right {
