@@ -197,3 +197,35 @@ select {
 .expiration-date li {
   width: 100%;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.credit-card-check-container {
+  display: flex;
+  gap: 1rem;
+  background-color: #507ffa;
+  width: 40rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.credit-card-check-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pedido:target .overlay {
+  display: none;
+}
