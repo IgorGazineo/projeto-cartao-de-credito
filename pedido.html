@@ -17,7 +17,8 @@
     <!-- <header>
       <a href="index.html"><img src="images/Icon.svg" alt="Logo" /></a>
     </header> -->
-    <aside>
+    <!-- ******************** aside ************************************* -->
+    <!-- <aside>
       <div class="overlay">
         <section class="credit-card-check-container">
           <div class="credit-card-check-left">
@@ -57,10 +58,12 @@
 
         <section class="successful-message-container"></section>
       </div>
-    </aside>
+    </aside> -->
+    <!-- ********************  credit card container ******************** -->
     <main class="credit-card-container">
       <!-- ********************  left ******************** -->
       <section class="left">
+        <!-- ********************  front card ******************** -->
         <section class="credit-card front-card">
           <div class="card-logo">
             <img src="images/Icon.svg" alt="logo" />
@@ -79,7 +82,7 @@
             </li>
           </ul>
         </section>
-
+        <!-- ********************  back card ******************** -->
         <section class="credit-card back-card">
           <div class="line-card"></div>
           <div class="verification-code-card">000</div>
@@ -87,25 +90,31 @@
             <img src="images/Icon.svg" alt="logo" />
           </div>
         </section>
-
+        <!-- ********************  back button ******************** -->
         <section>
           <a href="index.html" class="voltar-btn">Voltar</a>
         </section>
       </section>
       <!-- ********************  right ******************** -->
       <section class="right">
+        <!-- ********************  form ******************** -->
         <form action="">
           <h1>Digite os dados do seu cartão</h1>
 
           <section>
             <ul>
               <li>
-                <label for="card-number">Número do cartão</label>
-                <input type="number" name="card-number" id="card-number" />
+                <div class="card-number-label">
+                  <label for="card-number-form">Número do cartão</label>
+                  <div>
+                    (<span class="total-length-number">0</span>/<span>16</span>)
+                  </div>
+                </div>
+                <input type="text" name="card-number" id="card-number-form" />
               </li>
               <li>
                 <label for="card-name">Nome impresso no cartão</label>
-                <input type="number" name="card-name" id="card-name" />
+                <input type="text" name="card-name" id="card-name" />
               </li>
             </ul>
           </section>
@@ -152,9 +161,11 @@
               id="verification-code"
             />
           </section>
+          <!-- ********************  submit button ******************** -->
           <button class="fazer-pedido-btn">Fazer pedido</button>
         </form>
       </section>
     </main>
+    <script src="pedido.js"></script>
   </body>
 </html>

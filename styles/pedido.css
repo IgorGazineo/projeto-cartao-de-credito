@@ -135,6 +135,20 @@ form h1 {
   margin-bottom: 10px;
 }
 
+.card-number-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-number-label div {
+  font-size: 13px;
+}
+
+.total-length-number {
+  color: rgb(255, 128, 128);
+}
+
 label {
   font-size: 13px;
   font-weight: 500;
